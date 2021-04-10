@@ -35,20 +35,19 @@
 
                     <v-text-field
                       v-model="stock.symbol"
-                      label="Description"
+                      label="Symbol"
                       required
                     />
                     <v-text-field
                       v-model="stock.name"
-                      label="Acquired Value"
+                      label="Name"
                       required
-                      type="number"
                     />
                     <v-text-field
                       v-model="stock.shares"
-                      label="Acquired_date"
+                      label="Shares"
                       required
-                      type="date"
+                      type="number"
                     />
                     <v-text-field
                       v-model="stock.purchase_price"

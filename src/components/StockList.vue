@@ -84,7 +84,7 @@
                   <v-card>
                     <v-card-title class="pb-0 pt-0 pl-0">
                       <v-col cols="9" class="text-left body-2 text-truncate"
-                        >{{ item.cust_number }} - {{ item.symbol }}</v-col
+                        >{{ item.cust_number }} - {{ item.name }}</v-col
                       >
                       <v-col cols="3" class="text-center">
                         <v-card-actions>
@@ -106,8 +106,9 @@
 
                     <v-list v-show="isExpanded(item)" dense>
                       <v-list-item>
+                        <v-list-item-content>Symbol:</v-list-item-content>
                         <v-list-item-content class="align-end">{{
-                          item.name
+                          item.symbol
                         }}</v-list-item-content>
                       </v-list-item>
                       <v-list-item>
